@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="COURSE.CSS">
+
+</style>
+</head>
+<body>
+
+<div id="navbar">
+  <a href="mcaHOME.html" id="logo">BUIT mca </a>
+  <div id="navbar-right">
+    <a class="active" href="mcaHOME.html">Home</a>
+    
+    <a href="BOOKS.HTML">BOOKS</a>
+    <a href="VIDEO.HTML">VIDEO</a>
+    <a href="test.HTML">test</a>
+    <a href="faculty">FACULTY INTERACTION</a>
+    <a class="active" href="logout.php">LOGOUT</a>
+  </div>
+</div>
+
+
+<h1>course</h1>
+
+
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'FIRST')" id="defaultOpen">FIRST SEMESTER</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">SECOND SEM</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">THIRD SEM</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">FORTH SEM</button>
+</div>
+
+<div id="FIRST" class="tabcontent">
+  <h3>London</h3>
+  <p>London is the capital city of England.</p>
+  <embed src="EV-08 M.C.A. 2Sem (New) - Data Base Management System.pdf" width="900px " height="500px" style="padding-left: 50px;">
+</div>
+
+<div id="Paris" class="tabcontent">
+  <h3>Paris</h3>
+  <p>Paris is the capital of France.</p>
+  <embed src="EV-09 M.C.A. 2Sem (New) - Theory of Computation (1).pdf" width="900px " height="500px"  style="padding-left: 50px;"> 
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <h3>Tokyo</h3>
+  <p>Tokyo is the capital of Japan.</p>
+  <embed src="EV-10 M.C.A. 2Sem (New) - Object Oriented Analysis, Design Prog..pdf" width="900px "  height="500px" style="padding-left: 50px;">
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("navbar").style.padding = "30px 10px";
+    document.getElementById("logo").style.fontSize = "25px";
+  } else {
+    document.getElementById("navbar").style.padding = "80px 10px";
+    document.getElementById("logo").style.fontSize = "35px";
+  }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="nav.css">
+<link rel="stylesheet" href="mca4.css">
+<link rel="stylesheet" href="COURSE.CSS">
+<link rel="stylesheet" href="flip.css">
+
+</style>
+</head>
+<body>
+
+<div id="navbar">
+  <a href="mcaHOME.html" id="logo">BUIT mca </a>
+  <div id="navbar-right">
+    <a class="active" href="mcaHOME.html">Home</a>
+    <a href="COURSE.HTML">COURSE</a>
+    
+    
+    <a href="#about">FACULTY INTERACTION</a>
+    <a class="active" href="logout.php">LOGOUT</a>
+  </div>
+</div>
+
+
+<div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+        <h1>John Doe</h1> 
+        <p>Architect & Engineer</p> 
+        <p>We love that guy</p>
+      </div>
+    </div>
+
+    
+
+    
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("navbar").style.padding = "30px 10px";
+    document.getElementById("logo").style.fontSize = "25px";
+  } else {
+    document.getElementById("navbar").style.padding = "80px 10px";
+    document.getElementById("logo").style.fontSize = "35px";
+  }
+}
+</script>
+
+</body>
+</html>
